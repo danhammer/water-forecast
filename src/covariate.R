@@ -14,7 +14,7 @@ idx <- function(string) {
   return(as.numeric(x[[1]][2]))
 }
 
-time.covariate <- function(time.var, opt = "linear.trend") {
+time.covariate <- function(time.var, crisis.mat, opt = "linear.trend") {
   ## accepts an option to specify the method to account for temporal
   ## heterogeneity, and returns the covariate matrix that will be used
   ## in the forecasting regression.
